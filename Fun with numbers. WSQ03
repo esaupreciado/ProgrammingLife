@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main ()
+{
+	float x, y;
+
+ 	printf ("\nIntroduce el primer numero: ");
+ 	scanf ("%f", &x);
+
+ 	printf ("\nIntroduce el segundo numero: ");
+ 	scanf ("%f", &y);
+
+ 	printf ("\nLa suma es: %f", x+y);
+ 	printf ("\nLa resta es: %f", x-y);
+ 	printf ("\nLa multiplicacion es: %f", x*y);
+ 	printf ("\nLa division es: %f", x/y);
+
+ 	return 1;
+}
