@@ -1,0 +1,34 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+   int main(){
+
+   int guess;
+   int random = 0;
+   int Contador = 1;
+   srand(time(0));//Random number
+   random = rand()%100+1; //Random number between 1 and 100
+   while(guess!=random){  //Loop
+   Contador= Contador + 1;
+   cout << "I'm thinking in a number between 1 to 100" << endl;
+   cin >> guess;
+
+   if (guess > random){
+     cout<< "Too high!" << endl;
+   }
+   else if (guess < random){
+     cout << "Too low!" << endl;
+   }
+   else {
+     cout << "Yeap, that's the number!" << endl;
+     cout << "The number of times that you tried to guess my number was: " << Contador << endl;
+
+
+     }
+
+}
+   return 0;
+ }
