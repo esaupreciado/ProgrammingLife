@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  int v1, v2;
+  int sum =0;
+
+  cout<< "Please introduce the lower bound of the range:  ";
+  cin>> v1;
+  cout<< "Please introduce the higher bound of the range:  ";
+  cin>> v2;
+
+  int number =v1;
+  while (number<=v2){
+    sum= sum+number;
+    number++;
+
+  }
+  cout<< "The inclusive sum is:  "<<sum<<endl;
+  return 0;
+
+
+}
