@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+  double c, f;
+  cout<< "What is the temperature in Farenheit?  ";
+  cin>> f;
+  c=5*(f-32)/9;
+  cout <<" A temperature of ";
+  cout<< f;
+  cout<<" degrees Farenheit is ";
+  cout<< c;
+  cout<<" in Celsius.  ";
+  if (c>= 100) {
+  cout<< " Water boils at this temperature in sea level reference ";
+  }
+else {
+  cout<< " Water do not boil at this temperature in sea level reference";
+  }
+  return 0;
+
+}
