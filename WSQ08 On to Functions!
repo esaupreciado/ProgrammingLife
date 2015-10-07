@@ -1,0 +1,47 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+double addition (double a, double b){
+return a+b;
+
+}
+
+double sustraction (double a, double b){
+return a-b;
+
+}
+
+double product (double a, double b){
+return a*b;
+
+}
+
+double division (double a, double b){
+return a/b;
+
+}
+
+int remainder (int a, int b){
+return a%b;
+
+}
+
+int main(){
+  double a;
+  double b;
+
+  cout<<"I will calculate basic operations of two numbers"<<endl;
+
+  cout<< "Please introduce the first number  "; cin >>a;
+
+  cout<< "Please introduce the second number  "; cin>>b;
+
+  cout<<"The sum of the two numbers is  "<< addition(a,b)<<endl;
+  cout<<"The sustraction of the two numbers is "<< sustraction(a,b)<<endl;
+  cout<<"The product of the two numbers is "<<product(a,b)<<endl;
+  cout<<"The division of the two numbers is "<<division(a,b)<<endl;
+  cout<<"The remainder of the division is "<<remainder(a,b)<<endl;
+
+  return 0;
+}
