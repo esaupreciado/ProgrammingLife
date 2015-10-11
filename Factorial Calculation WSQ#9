@@ -1,0 +1,45 @@
+/* Source code to find factorial of a number. */
+#include <iostream>
+using namespace std;
+int main()
+{
+  int x , factorial=1;
+
+    cout << "Please enter a non-negative number:  " << endl;
+    cin >> x;
+
+    for(int a=1; a<=x; a++)
+    {
+        factorial=factorial*a;
+    }
+
+cout << "The factorial of your number is " << factorial << endl;
+cout << "Would you like to play again?   ";
+string answer;
+cin >> answer;
+
+do
+{
+    int x , factorial=1;
+
+    cout << "Please enter a non-negative number:  " << endl;
+    cin >> x;
+
+    for(int a=1;a<=x;a++)
+    {
+        factorial=factorial*a;
+    }
+
+    cout << "The factorial of your number is " << factorial << endl;
+    cout << "Would you like to play again  ? ";
+    cin >> answer;
+
+}while (answer =="yes");
+
+if (answer== "no")
+{
+  cout << "AS YOU WISH MASTER, MAY THE FORCE BE WITH YOU! " << endl;
+}
+
+return 0;
+}
