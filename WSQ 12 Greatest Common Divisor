@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int gcd(int a, int b){//Making the function
+	int g=a;
+	int h,l;
+	int f=2;
+	if(a==0){
+		return a;
+	}
+		while(g>0){//Doing a loop
+		if(g==0){
+			goto exit;
+		}
+		g=a%b;
+		a=b;
+		b=g;
+		}
+	if (l=1000){
+	exit:
+	g=a;
+	}
+	return g;
+}
+
+int main(){
+int a, b;
+cout<<"Please introduce the first number"<<endl;
+cin>>a;
+cout<<"Please introduce the second number"<<endl;
+cin>>b;
+cout<<endl;
+
+cout<<"Your Greatest Common Divisor is: "<<gcd(a,b)<<endl;
+
+return 0;
+}
