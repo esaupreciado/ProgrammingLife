@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+float sqrt(float); //prototype
+
+int main() {
+ cout<< "I will calculate the square root of the number that you ask for"<< endl;
+ cout<< "Please type in the number: "<<endl;
+ float n;
+ cin>> n;
+ float num = n;
+ float result = sqrt(num);
+ cout<<"final result, the square root is =  " <<result<<endl;
+
+ return 0;
+}
+
+float sqrt(float number) {
+ float error = 0.00001;
+ float s = number;
+
+ while((s - number/s) > error) {
+ s = (s+ number/s)/2;
+ cout<<"Intermediate result= " << s<<endl;
+ }
+ return s;
+}
